@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BoomiGroovyTool:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BoomiGroovyTool_jar</output-path>
+    <root id="archive" name="BoomiGroovyTool.jar">
+      <element id="module-output" name="BoomiGroovyTool" />
+      <element id="library" level="project" name="boomi-logging" />
+    </root>
+  </artifact>
+</component>
