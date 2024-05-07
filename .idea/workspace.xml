@@ -6,10 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Inital commit">
+    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Added testfiles and made some fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/ExecutionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/ExecutionUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/boomi/execution/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boomi/execution/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/DataContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/DataContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/Logger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1715074711856</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Added testfiles and made some fixes">
+      <created>1715080881830</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1715080881830</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,14 +96,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Intital commit" />
     <MESSAGE value="Inital commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inital commit" />
+    <MESSAGE value="Added testfiles and made some fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added testfiles and made some fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Test.java</url>
-          <line>27</line>
+          <line>43</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
