@@ -6,24 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Intital commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BoomiGroovyTool_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/boomi_logging.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoomiGroovyTool.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/BoomiGroovyTool_jar/BoomiGroovyTool.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/DataContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/ExecutionUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/Logger.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/boomi/execution/ExecutionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/boomi/execution/Logger.java" afterDir="false" />
-    </list>
+    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Inital commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +50,13 @@
       <option name="presentableId" value="Default" />
       <updated>1715063025266</updated>
     </task>
+    <task id="LOCAL−00001" summary="Inital commit">
+      <created>1715074147199</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1715074147199</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,6 +72,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Intital commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intital commit" />
+    <MESSAGE value="Inital commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inital commit" />
   </component>
 </project>
