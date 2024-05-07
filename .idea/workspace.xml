@@ -6,11 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Added testfiles and made some fixes">
+    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Some more fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/DataContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/DataContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
@@ -79,7 +76,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1715080881830</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Some more fixes">
+      <created>1715090381559</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1715090381559</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,14 +100,15 @@
     <MESSAGE value="Intital commit" />
     <MESSAGE value="Inital commit" />
     <MESSAGE value="Added testfiles and made some fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added testfiles and made some fixes" />
+    <MESSAGE value="Some more fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some more fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Test.java</url>
-          <line>43</line>
+          <line>38</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
