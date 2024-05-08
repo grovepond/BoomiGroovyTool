@@ -88,6 +88,11 @@ public class DataContext {
         if (!_outputFilePath.endsWith("/"))
             _outputFilePath += "/";
 
+        File outDir = new File(_outputFilePath);
+        if (!outDir.exists()) {
+            outDir.mkdirs();
+        }
+
         try {
             FileOutputStream os = new FileOutputStream(_outputFilePath + getRandomFileName());
             is.transferTo(os);
