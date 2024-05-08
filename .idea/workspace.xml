@@ -6,8 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Some more fixes">
+    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="DataContext.storeStream now saves file to disk. Using internal MyStream class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BoomiGroovyTool_jar/BoomiGroovyTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BoomiGroovyTool_jar/BoomiGroovyTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/DataContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/DataContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfiles/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfiles/input1.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +87,19 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1715090381559</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Rebuilt with JDK 11">
+      <created>1715091822997</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1715091822997</updated>
+    </task>
+    <task id="LOCAL−00007" summary="DataContext.storeStream now saves file to disk. Using internal MyStream class.">
+      <created>1715168367056</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1715168367056</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,15 +118,23 @@
     <MESSAGE value="Inital commit" />
     <MESSAGE value="Added testfiles and made some fixes" />
     <MESSAGE value="Some more fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some more fixes" />
+    <MESSAGE value="Rebuilt with JDK 11" />
+    <MESSAGE value="DataContext.storeStream now saves file to disk." />
+    <MESSAGE value="DataContext.storeStream now saves file to disk. Using internal MyStream class." />
+    <option name="LAST_COMMIT_MESSAGE" value="DataContext.storeStream now saves file to disk. Using internal MyStream class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Test.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="2" />
+          <line>45</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Test.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

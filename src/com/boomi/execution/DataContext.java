@@ -13,7 +13,7 @@ public class DataContext {
 
     private ArrayList<Properties> _dynamicDocumentProperties;
     private ArrayList<Properties> _documentProperties;
-    private ArrayList<MyStream<InputStream, String>> _streams;
+    private ArrayList<InputStream> _streams;
     private static final String _ddpPrefix = "document.dynamic.userdefined.";
     private String _outputFilePath;
 
@@ -52,7 +52,7 @@ public class DataContext {
     private void createStream(String path) {
         try {
             InputStream is = new FileInputStream(path);
-            _streams.add(new MyStream<>(is, path));
+            _streams.add(is);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -63,17 +63,11 @@ public class DataContext {
     }
 
     public void storeStream(InputStream is, Properties props) {
-        for (MyStream<InputStream, String> s : _streams) {
-            if (s.getStream().equals(is)) {
-                saveFile(s);
-                return;
-            }
-        }
-        return;
+        saveFile(is);
     }
 
     public InputStream getStream(int index) {
-        return _streams.get(index).getStream();
+        return _streams.get(index);
     }
 
     public void addDynamicDocumentPropertyValues(int index, String key, String value) {
@@ -89,25 +83,15 @@ public class DataContext {
     public Properties getProperties(int index) {
         return _dynamicDocumentProperties.get(index);
     }
-    public void saveFile (MyStream ms) {
-        InputStream is = (InputStream) ms.getStream();
+    public void saveFile (InputStream is) {
         if (!_outputFilePath.endsWith("/"))
             _outputFilePath += "/";
-
-
-
-        try (
-             OutputStream os = new FileOutputStream((String) _outputFilePath + getRandomFileName())) {
-
-            // Buffer for reading data from InputStream
+        try (OutputStream os = new FileOutputStream(_outputFilePath + getRandomFileName())) {
             byte[] buffer = new byte[1024];
             int bytesRead;
-
-            // Read from InputStream and write to file
             while ((bytesRead = is.read(buffer)) != -1) {
                 os.write(buffer, 0, bytesRead);
             }
-
         } catch (IOException e) {
             System.err.println("Error saving file: " + e.getMessage());
         }
@@ -115,31 +99,9 @@ public class DataContext {
     private String getRandomFileName () {
         long min = 1000000000L;
         long max = 9999999999L;
-
-        // Create a Random object
         Random rnd = new Random();
-
-        // Generate a random number within the specified range
         long number = min + ((long) (rnd.nextDouble() * (max - min)));
-        return String.valueOf(number) + ".dat";
-
-    }
-    class MyStream<InputStream, String> {
-        private final InputStream stream;
-        private final String path;
-
-        public MyStream(InputStream stream, String path) {
-            this.stream = stream;
-            this.path = path;
-        }
-
-        public InputStream getStream() {
-            return stream;
-        }
-
-        public String getPath() {
-            return path;
-        }
+        return number + ".dat";
     }
 
 
