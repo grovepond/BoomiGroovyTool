@@ -6,13 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="DataContext.storeStream now saves file to disk. Using internal MyStream class.">
+    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Removed unnecessary internal class and use random filename instead.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BoomiGroovyTool_jar/BoomiGroovyTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BoomiGroovyTool_jar/BoomiGroovyTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/DataContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BoomiGroovyTool/com/boomi/execution/DataContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testfiles/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testfiles/input1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +95,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1715168367056</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="Removed unnecessary internal class and use random filename instead.">
+      <created>1715168862181</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1715168862181</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,19 +123,21 @@
     <MESSAGE value="Rebuilt with JDK 11" />
     <MESSAGE value="DataContext.storeStream now saves file to disk." />
     <MESSAGE value="DataContext.storeStream now saves file to disk. Using internal MyStream class." />
-    <option name="LAST_COMMIT_MESSAGE" value="DataContext.storeStream now saves file to disk. Using internal MyStream class." />
+    <MESSAGE value="Rewmoved unnecessary internal class and use random filename instead." />
+    <MESSAGE value="Removed unnecessary internal class and use random filename instead." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary internal class and use random filename instead." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Test.java</url>
-          <line>45</line>
+          <line>40</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Test.java</url>
-          <line>14</line>
+          <line>9</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
