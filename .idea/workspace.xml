@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Removed unnecessary internal class and use random filename instead.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BoomiGroovyTool_jar/BoomiGroovyTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BoomiGroovyTool_jar/BoomiGroovyTool.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
