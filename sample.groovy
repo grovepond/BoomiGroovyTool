@@ -2,11 +2,12 @@
 
 //Mock section for testing outside of Boomi. Remove when adding to Data Process shape.
 import com.boomi.execution.DataContext
-
+import com.boomi.execution.Logger
 // Place directory for multiple files and file name for single file
-String inputFiles = "${System.getProperty("user.dir")}/testfiles/input.json"
-dataContext = new DataContext() //Custom Class to mock Boomi's internal dataContext
-dataContext.attachFiles(inputFiles)
+String inPath = "${System.getProperty("user.dir")}/testfiles/in"
+String outPath = "${System.getProperty("user.dir")}/testfiles/out"
+dataContext = new DataContext(outPath) //Custom Class to mock Boomi's internal dataContext
+dataContext.attachFiles(inPath)
 ExecutionUtil ExecutionUtil = new ExecutionUtil() //Custom Class to mock Boomi's internal ExecutionUtil
 
 //Set any Execution Properties that the Boomi process would add
@@ -47,7 +48,8 @@ for( int i = 0; i < dataContext.getDataCount(); i++ ) {
     
     logger.info ("File Contents: " + is.text);
 
-    is = new ByteArrayInputStream(output.getBytes());    
+    
     dataContext.storeStream(is, props);
 }
+
 
