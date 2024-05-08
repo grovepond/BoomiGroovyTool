@@ -46,10 +46,9 @@ for( int i = 0; i < dataContext.getDataCount(); i++ ) {
     logger.info("sample_property: " + ExecutionUtil.getProcessProperty("e664d4fc-2e22-4898-ba05-1a898409a813", "sample_property"));
     logger.info("lastrun: " + ExecutionUtil.getExecutionProperty("com.boomi.execution.lastrun"));
     
-    logger.info ("File Contents: " + is.text);
+    //logger.info ("File Contents: " + is.text);
 
     
     dataContext.storeStream(is, props);
 }
-
 

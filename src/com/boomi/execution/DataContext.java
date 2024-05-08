@@ -83,19 +83,21 @@ public class DataContext {
     public Properties getProperties(int index) {
         return _dynamicDocumentProperties.get(index);
     }
+
     public void saveFile (InputStream is) {
         if (!_outputFilePath.endsWith("/"))
             _outputFilePath += "/";
-        try (OutputStream os = new FileOutputStream(_outputFilePath + getRandomFileName())) {
-            byte[] buffer = new byte[1024];
-            int bytesRead;
-            while ((bytesRead = is.read(buffer)) != -1) {
-                os.write(buffer, 0, bytesRead);
-            }
+
+        try {
+            FileOutputStream os = new FileOutputStream(_outputFilePath + getRandomFileName());
+            is.transferTo(os);
+            os.flush();
+
         } catch (IOException e) {
             System.err.println("Error saving file: " + e.getMessage());
         }
     }
+
     private String getRandomFileName () {
         long min = 1000000000L;
         long max = 9999999999L;
