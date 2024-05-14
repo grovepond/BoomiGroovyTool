@@ -13,5 +13,6 @@ Dev Containers
 1. Clone this repository
 2. In VS Code, run the command (Press F1) "Dev Containers: Open Folder in Container..."
 3. Find and open the folder BoomiGroovyTool
-4. Open sample.groovy
-5. Open a new terminal in Visual Studio Code and run groovy -cp out/artifacts/BoomiGroovyTool.jar sample.groovy
+4. Choose the option to use an existing Dockerfile
+5. Open sample.groovy
+6. Open a new terminal in Visual Studio Code and run groovy -cp out/artifacts/BoomiGroovyTool.jar sample.groovy
