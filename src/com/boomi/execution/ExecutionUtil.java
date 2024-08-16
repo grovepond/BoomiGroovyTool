@@ -16,14 +16,14 @@ public class ExecutionUtil {
     public ExecutionUtil () {
         _processProrties = new Properties();
         _dynamicProcessProperties = new Properties();
-        _executionProperties = new HashMap<String, String>();
+        _executionProperties = new HashMap<>();
 
     }
     public  String getContainerId() { return _containerId; }
 
     public  String getDirectory() { return _direcory; }
 
-    public  String getExecutionProperty(String key) { return _executionProperties.get(key).toString(); }
+    public  String getExecutionProperty(String key) { return _executionProperties.get(key); }
 
     public  void setExecutionProperty(String key, String value) {
         _executionProperties.put(key, value);
@@ -33,11 +33,13 @@ public class ExecutionUtil {
     }
 
     public  String getProcessProperty(String componentId, String propertyKey) {
-        return Objects.requireNonNullElse(_processProrties.get(propertyKey).toString(), "");
+        Object value = _processProrties.get(propertyKey);
+        return Objects.requireNonNullElse(value != null ? value.toString() : null, "");
     }
 
-    public  String getDynamicProcessProperty(String PropertyName) {
-        return Objects.requireNonNullElse(_dynamicProcessProperties.get(PropertyName).toString(), "");
+    public  String getDynamicProcessProperty(String propertyName) {
+        Object value = _dynamicProcessProperties.get(propertyName);
+        return Objects.requireNonNullElse(value != null ? value.toString() : null, "");
     }
 
     public  void setDynamicProcessProperty(String propertyName, String propertyValue, Boolean persist) {

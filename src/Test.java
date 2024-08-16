@@ -38,6 +38,7 @@ public class Test {
             logger.info("DDP: " + props.getProperty("document.dynamic.userdefined.DDP-sample"));
             logger.info("PP: " + ExecutionUtil.getProcessProperty("e664d4fc-2e22-4898-ba05-1a898409a813", "sample_property"));
             logger.info("EP: " + ExecutionUtil.getExecutionProperty("com.boomi.execution.lastrun"));
+            logger.info("DPP: " + ExecutionUtil.getDynamicProcessProperty("DPP_sample"));
             dataContext.storeStream(is, props);
         }
 

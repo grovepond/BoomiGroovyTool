@@ -6,8 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Removed qualified reference for java.util.Date.">
-      <change beforePath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boomi/execution/DataContext.java" afterDir="false" />
+    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Corrected handling of unset properties.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/boomi/execution/ExecutionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boomi/execution/ExecutionUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1715168862181</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Creating out dir if not exists.">
+      <created>1715176852972</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1715176852972</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,14 +132,16 @@
     <MESSAGE value="DataContext.storeStream now saves file to disk. Using internal MyStream class." />
     <MESSAGE value="Rewmoved unnecessary internal class and use random filename instead." />
     <MESSAGE value="Removed unnecessary internal class and use random filename instead." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary internal class and use random filename instead." />
+    <MESSAGE value="Creating out dir if not exists." />
+    <MESSAGE value="Corrected handling of unset properties." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected handling of unset properties." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Test.java</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
