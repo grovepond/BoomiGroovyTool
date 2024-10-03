@@ -15,6 +15,10 @@ ExecutionUtil.setExecutionProperty("com.boomi.execution.lastrun", new Date().toS
 
 // Set any Dynamic Process Properties that the Boomi process would add. 
 ExecutionUtil.setDynamicProcessProperty("dpp_sample", "dpp_sample-value", false)
+// If the Propoerties contains a lot of data, read them from a file
+//def dpp = new File("${System.getProperty("user.dir")}/testfiles/dpp/dpp_sample.dpp")
+//ExecutionUtil.setDynamicProcessProperty("dpp_sample", dpp.getText("UTF-8")    , false)
+
 
 // Set any Process properties that the Boomi process would add. 
 ExecutionUtil.setProcessProperty("e664d4fc-2e22-4898-ba05-1a898409a813", "sample_property", "sample-property-value");

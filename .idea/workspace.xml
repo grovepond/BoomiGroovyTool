@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Corrected handling of unset properties.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/boomi/execution/ExecutionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boomi/execution/ExecutionUtil.java" afterDir="false" />
-    </list>
+    <list default="true" id="1e80f576-7f31-4c99-9a42-347d462f0d56" name="Changes" comment="Corrected handling of unset properties." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +104,25 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1715176852972</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Corrected handling of unset properties.">
+      <created>1723815405108</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1723815405108</updated>
+    </task>
+    <task id="LOCAL−00011" summary="Corrected handling of unset properties.">
+      <created>1723815444199</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1723815444199</updated>
+    </task>
+    <task id="LOCAL−00012" summary="Corrected handling of unset properties.">
+      <created>1723815641657</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1723815641657</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
