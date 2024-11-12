@@ -11,9 +11,9 @@ import java.util.stream.Stream;
 
 public class DataContext {
 
-    private ArrayList<Properties> _dynamicDocumentProperties;
-    private ArrayList<Properties> _documentProperties;
-    private ArrayList<InputStream> _streams;
+    private final ArrayList<Properties> _dynamicDocumentProperties;
+    private final ArrayList<Properties> _documentProperties;
+    private final ArrayList<InputStream> _streams;
     private static final String _ddpPrefix = "document.dynamic.userdefined.";
     private String _outputFilePath;
 
@@ -70,9 +70,17 @@ public class DataContext {
         return _streams.get(index);
     }
 
+    public void addDynamicDocumentPropertyValues(String key, String value) {
+        addDynamicDocumentPropertyValues(0, key, value);
+    }
+
     public void addDynamicDocumentPropertyValues(int index, String key, String value) {
         Properties prop = _dynamicDocumentProperties.get(index);
         prop.put(_ddpPrefix + key, value);
+    }
+
+    public void addDocumentPropertyValues(String key, String value) {
+        addDocumentPropertyValues(0, key, value);
     }
 
     public void addDocumentPropertyValues(int index, String key, String value) {
