@@ -19,13 +19,17 @@ public class Test {
         ExecutionUtil.setDynamicProcessProperty("DPP_sample", "DPP_sample-value", false);
 
         // Set Document Properties for all incoming messages
-        for (int i = 0; i < dataContext.getDataCount(); i++)
+        for (int i = 0; i < dataContext.getDataCount(); i++) {
+            if (0 == i)
+                dataContext.addDocumentPropertyValues("connector.track.disk.filename", inputFilePath + "_" + i);
             dataContext.addDocumentPropertyValues(i, "connector.track.disk.filename", inputFilePath + "_" + i);
-
+        }
         // Set Dynamic Document Properties for all incoming messages
-        for (int i = 0; i < dataContext.getDataCount(); i++)
+        for (int i = 0; i < dataContext.getDataCount(); i++) {
+            if (0 == i)
+                dataContext.addDynamicDocumentPropertyValues("DDP-sample", inputFilePath + "DDP_sample-value-" + i);
             dataContext.addDynamicDocumentPropertyValues(i, "DDP-sample", inputFilePath + "DDP_sample-value-" + i);
-
+        }
         Logger logger = ExecutionUtil.getBaseLogger();
 
 
@@ -35,6 +39,7 @@ public class Test {
 
             props.setProperty("document.dynamic.userdefined.filecontent", is.toString());
 
+            logger.info("DP: " + props.getProperty("connector.track.disk.filename"));
             logger.info("DDP: " + props.getProperty("document.dynamic.userdefined.DDP-sample"));
             logger.info("PP: " + ExecutionUtil.getProcessProperty("e664d4fc-2e22-4898-ba05-1a898409a813", "sample_property"));
             logger.info("EP: " + ExecutionUtil.getExecutionProperty("com.boomi.execution.lastrun"));
